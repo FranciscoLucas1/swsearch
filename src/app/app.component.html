@@ -1,0 +1,11 @@
+<main class="main">
+  <p class="titulo"> BUSCA STARWARS </p>
+  <form [formGroup]="pesquisaForm" action="/salva" method="POST">
+    <label for="nome"> Procure o personagem pelo nome</label>
+    <input formControlName="nome" type="text" name="nome" id="nome">
+  </form>
+  <button (click)="mostra()">Mostra</button>
+  <div class="container_principal">
+    <h1>{{nome_persoangem}}</h1>
+  </div>
+</main>
