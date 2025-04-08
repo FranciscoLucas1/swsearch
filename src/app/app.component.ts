@@ -5,7 +5,7 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet ,ReactiveFormsModule],
+  imports: [ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -17,7 +17,6 @@ export class AppComponent {
   nome_persoangem = ""
 
   constructor(private cliente_http: HttpClient) {}
-
 
   mostra(): void {
     this.cliente_http

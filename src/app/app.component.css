@@ -1,20 +1,82 @@
 
+
+
+@font-face{
+    font-family: starjedi;
+
+    src: url("../assets/Starjedi.ttf");
+}
+
+
 .titulo {
-    font-family: "Roboto", sans-serif;
+    font-family: "starjedi", sans-serif;
     font-size: 300%;
     font-weight: bold;
     display: flex;
     justify-content: center;
+    margin-bottom: 0.5em;
+    margin-top: -0.1em;
+}
+
+.pesquisa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1.5em;
+}
+
+label {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.1em;
+  
+}
+
+input {
+    width: 18.75rem;
+    height: 1.90em;
+    border: 1px solid #ffe81f;
+    font-family: "Roboto", sans-serif;
+
+}
+
+input:focus {
+    border: 1px solid #FFE300;
+    outline: none;
 }
 
 
+.botao{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+    width: 100px;
+    height: 30px;
+    background-color: #FFE300;
+    outline: none;
+    border-style: none;
+    border-radius: 0.188em;
+    margin-top: 0.6em;
+    cursor: pointer;
+  
+}
+
+.botao:hover {
+    background-color: #fff59d;
+}
 .container_principal {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 900px;
-    height: 600px;
+    width: 56.25em;
+    height: 37.5em;
     background-color: #f7f7f7;
-    margin: 90px auto
+    margin: 0.625em auto;
+    border-radius: 0.625em;
     
 }
+
